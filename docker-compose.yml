@@ -2,7 +2,6 @@ version: '3.1'
 
 volumes:
     prometheus_data: {}
-    grafana_data: {}
 
 services:
 
@@ -18,10 +17,7 @@ services:
       - '--web.console.templates=/usr/share/prometheus/consoles'
       - '--web.enable-lifecycle'
     ports:
-      - 9090:9090
-    links:
-      - cadvisor:cadvisor
-      - alertmanager:alertmanager    
+      - 9090:9090 
     restart: always
     deploy:
       mode: global

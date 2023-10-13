@@ -27,7 +27,7 @@ if [ -d "$DIRECTORY" ]; then
   rm -rf "$DIRECTORY"
 fi
 echo "Cloning Project"
-git clone https://github.com/PagerTree/prometheus-grafana-alertmanager-example.git
+git clone git@ssh.dev.azure.com:v3/DIGIOPSTOOLING/MonitoringStackCloud/docker-prometheus-blackbox
 cd "$DIRECTORY"
 
 echo "Making Utility scripts executable"

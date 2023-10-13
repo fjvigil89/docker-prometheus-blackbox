@@ -21,9 +21,7 @@ services:
       - 9090:9090
     links:
       - cadvisor:cadvisor
-      - alertmanager:alertmanager
-    depends_on:
-      - cadvisor
+      - alertmanager:alertmanager    
     restart: always
     deploy:
       mode: global
